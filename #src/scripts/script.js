@@ -1,14 +1,13 @@
-$(document).ready(function () {
-    $(".slider").slick({
-        // adaptiveHeight: true,
-        slidesToShow: 1,
-        speed: 600,
-        // autoplay: true,
-        // autoplaySpeed: 5000,
-    });
+let FlexJackdaw = $(".flex-block__jackdaw");
+let FlexBlock = $(".flex-block__check-mark");
+
+FlexJackdaw.on("click", function () {
+    FlexBlock.toggleClass("check-mark");
+})
+
+$(function(){
+    $("#phone").mask("+7 (999) 999-9999");
 });
-
-
 
 
 
