@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/*Обнуление*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*--------------------*/
+
+@font-face {
+  font-family: "Roboto-Medium";
+  font-display: swap;
+  src: url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.woff2") format("woff2");
+  font-weight: initial;
+  font-style: initial;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  font-display: swap;
+  src: url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.woff2") format("woff2");
+  font-weight: initial;
+  font-style: initial;
+}
+
+@font-face {
+  font-family: "Rubik-Bold";
+  font-display: swap;
+  src: url("../fonts/Rubik-Bold.woff") format("woff"), url("../fonts/Rubik-Bold.woff2") format("woff2");
+  font-weight: initial;
+  font-style: initial;
+}
+
+@font-face {
+  font-family: "Rubik-Medium";
+  font-display: swap;
+  src: url("../fonts/Rubik-Medium.woff") format("woff"), url("../fonts/Rubik-Medium.woff2") format("woff2");
+  font-weight: initial;
+  font-style: initial;
+}
+
+body {
+  background: url(/img/background/cosmos-1920.png);
+  width: 100%;
+  height: 100%;
+}
+
+.section-form__container {
+  max-width: 389px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-form__flex {
+  width: 100%;
+}
+
+.section-form__flex-title {
+  font-family: "Roboto-Medium";
+  margin-bottom: 25px;
+  font-size: 55px;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 19px rgba(0, 0, 0, 0.97);
+}
+
+.section-form__wrap {
+  background: #171929;
+  padding: 41px 45px;
+  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+  border-radius: 27px;
+  width: 100%;
+  height: 816px;
+}
+
+.webp body{ background: url(/img/background/cosmos-1920.webp); }
