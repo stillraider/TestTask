@@ -1,5 +1,14 @@
 let FlexJackdaw = $(".flex-block__jackdaw");
 let FlexBlock = $(".flex-block__check-mark");
+let Label = $(".label");
+let LabelText = $(".label__main-text");
+let index = 0;
+
+// Label.on("click", function () {
+//     index = Label.index(this);
+//     LabelText.css("color", "#797ea3");
+//     LabelText.eq(index).css("color", "white");
+// })
 
 FlexJackdaw.on("click", function () {
     FlexBlock.toggleClass("check-mark");

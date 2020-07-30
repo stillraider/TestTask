@@ -119,6 +119,7 @@ body {
 }
 
 .section-form__container {
+  padding: 90px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,7 +164,7 @@ body {
 
 .section-form__wrap-necessarily {
   font-family: "Roboto-Light";
-  margin-top: 11px;
+  margin: 10px 0;
   display: block;
   text-align: center;
   font-size: 15px;
@@ -172,34 +173,69 @@ body {
 }
 
 .section-form__wrap .label {
+  margin-top: 38px;
+  height: 50px;
+  display: block;
+  position: relative;
   color: #797EA3;
+}
+
+.section-form__wrap .label:first-child {
+  margin-top: 0;
 }
 
 .section-form__wrap .label__main-text {
   font-family: "Roboto-Light";
-  margin-bottom: 3px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
   font-size: 15px;
   line-height: 120%;
 }
 
 .section-form__wrap .label__input {
+  position: absolute;
+  bottom: 0;
   font-family: "Roboto-Regular";
   background-color: initial;
   border-bottom: 1px solid #3F4363;
   color: #FFFFFF;
-  margin-bottom: 38px;
   caret-color: white;
   width: 100%;
   height: 22px;
   padding: 4px 0;
 }
 
+.section-form__wrap .label__input:required + .label__main-text::after {
+  content: "*";
+  position: absolute;
+  color: #797ea3;
+}
+
+.section-form__wrap .label__input:focus + .label__main-text {
+  color: white;
+}
+
+.section-form__wrap .label__input:focus {
+  border-bottom: 1px solid white;
+}
+
 .section-form__wrap .label__text {
+  position: absolute;
+  bottom: 0;
   background-color: initial;
+  color: white;
   border-bottom: 1px solid #3F4363;
-  max-height: 115px;
-  max-width: 299px;
+  resize: none;
   width: 100%;
+}
+
+.section-form__wrap .label__text:focus + .label__main-text {
+  color: white;
+}
+
+.section-form__wrap .label__text:focus {
+  border-bottom: 1px solid white;
 }
 
 .section-form__wrap .flex-block__container {
@@ -249,7 +285,9 @@ body {
   transition: all .1s ease-in-out;
   cursor: pointer;
   background: #2C2F47;
-  width: 31px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 31px;
+          flex: 0 0 31px;
   height: 31px;
   border-radius: 8px;
 }
@@ -273,6 +311,10 @@ body {
   .section-form__wrap {
     background: #171929;
     padding: 31px 35px;
+  }
+
+  .section-form__container {
+    padding: 50px 0;
   }
 }
 
